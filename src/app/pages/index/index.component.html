@@ -1,0 +1,31 @@
+<div>
+  <div class="banner">
+    <a href="#" class="ban cur"></a>
+  </div>
+  <div class="instructions">
+    <div class="layout container">
+      <nz-steps [nzCurrent]="-1">
+        <nz-step nzTitle="选择所需服务"></nz-step>
+        <nz-step nzTitle="在线下单支付"></nz-step>
+        <nz-step nzTitle="服务商对接服务"></nz-step>
+        <nz-step nzTitle="验收服务"></nz-step>
+      </nz-steps>
+    </div>
+  </div>
+  <!--常用服务-->
+  <div class="popular-service">
+    <div class="container">
+      <app-boxhd title="常用服务"></app-boxhd>
+      <div class="clearfix">
+        <app-card [card]="card" *ngFor="let card of cardList"></app-card>
+      </div>
+    </div>
+  </div>
+  <!-- 内容创业服务 -->
+  <div class="content-service">
+    <div class="container">
+      <app-boxhd title="内容创业服务"></app-boxhd>
+
+    </div>
+  </div>
+</div>

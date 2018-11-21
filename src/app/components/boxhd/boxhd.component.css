@@ -1,0 +1,22 @@
+.mod-boxhd {
+  position: relative;
+  padding-left: 12px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.mod-boxhd:before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 24px;
+  background-color: #de373e;
+  top: 0;
+  left: 0;
+}
+.mod-boxhd-tit {
+  display: inline-block;
+  vertical-align: top;
+  color: #323232;
+  margin-top: 0;
+  font-size: 22px;
+}

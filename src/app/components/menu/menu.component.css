@@ -1,0 +1,67 @@
+.ant-menu-horizontal {
+  border: 0;
+}
+
+.ant-menu, .menu {
+  background-color: #de373e;
+}
+
+.ant-menu-item > a:hover {
+  color: white;
+}
+
+:host ::ng-deep .ant-menu-submenu-title:hover {
+  color: white;
+}
+
+.ant-menu-item-selected {
+  color: white;
+}
+
+.ant-menu-item-selected > a,
+.ant-menu-item-selected > a:hover {
+  color: white;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-menu-horizontal > .ant-menu-submenu:hover,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu-active,
+.ant-menu-horizontal > .ant-menu-item-open,
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-submenu-selected {
+  border-bottom: 0;
+}
+
+.ant-menu-horizontal > .ant-menu-item > a:hover {
+  color: white;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected > a {
+  color: white;
+}
+
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu {
+  border-bottom: 0;
+}
+
+.title-group{
+  padding: 0 2px;
+}

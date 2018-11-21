@@ -1,0 +1,32 @@
+.header{
+  padding: 16px 0;
+  background-color: #f8f8f8;
+}
+.header-logo{
+  float: left;
+}
+.header-logo img{
+  display: block;
+}
+.header-slogan {
+  font-size: 14px;
+  float: right;
+  color: #b2b2b2;
+  padding-top: 7px;
+}
+.header-slogan .item:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.header-slogan .item:after {
+  border: 1px solid #ededed;
+  width: 0;
+  height: 16px;
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 0;
+}

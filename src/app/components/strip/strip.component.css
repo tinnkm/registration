@@ -1,0 +1,115 @@
+.strip{
+  border: 1px solid #e3e3e3;
+  font-size: 0;
+  background-color: #fff;
+  margin-top: 14px;
+}
+.strip-cover{
+  display: inline-block;
+  vertical-align: top;
+  width: 210px;
+  height: 158px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 28px;
+  color: #fff;
+}
+.strip-feature{
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 0 12px;
+}
+.strip-cover .title {
+  font-size: 24px;
+}
+.strip-cover .intro {
+  font-size: 14px;
+  line-height: 20px;
+}
+.strip-cover .more {
+  font-size: 14px;
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  margin-left: -44px;
+  color: #fff;
+  padding: 2px 0;
+  width: 88px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.strip-item:first-child {
+  border-left: none;
+}
+.strip-item {
+  display: inline-block;
+  border-left: 1px solid #efefef;
+  padding: 0 20px;
+  width: 329px;
+  box-sizing: border-box;
+}
+
+.strip-item .header {
+  position: relative;
+  height: 74px;
+}
+.strip-item .sum {
+  position: relative;
+  margin-top: 16px;
+}
+
+.strip-item .title {
+  font-size: 16px;
+  line-height: 22px;
+  max-height: 46px;
+  color: #323232;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.strip-item .intro {
+  font-size: 14px;
+  line-height: 22px;
+  color: #878787;
+  margin-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  word-wrap: normal;
+}
+.strip-item .title a {
+  color: #323232;
+}
+.strip-item .price {
+  color: #de373e;
+  font-size: 16px;
+  line-height: 1;
+}
+.strip-item .record {
+  font-size: 14px;
+  color: #878787;
+  line-height: 1;
+  margin-top: 10px;
+}
+.strip-item .record span {
+  margin-right: 1em;
+}
+.strip-item .buy {
+  color: #de373e;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -14px;
+  border: 1px solid #de373e;
+  border-radius: 4px;
+  line-height: 26px;
+  padding: 0 7px;
+  font-size: 14px;
+  display: none;
+}

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Strip} from '../../model/strip';
 
 @Component({
   selector: 'app-strip',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./strip.component.css']
 })
 export class StripComponent implements OnInit {
-
+  @Input() strip: Strip;
+  show: number;
   constructor() { }
 
   ngOnInit() {

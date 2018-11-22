@@ -1,0 +1,21 @@
+<div class="card" [class.m10]="rowFirst">
+  <div class="top">
+    <a [href]="provider.seller">
+      <img [src]="provider.logo" class="logo">
+    </a>
+    <h5 [title]="provider.title">
+      <a [href]="provider.seller">{{provider.title}}</a>
+      <a [href]="provider.levelUrl" class="lv">{{provider.level}}</a>
+    </h5>
+    <p>
+      质量<em>{{provider.quality}}</em>
+      速度<em>{{provider.speed}}</em>
+      态度<em>{{provider.attitude}}</em>
+    </p>
+    <span class="cate-tag">{{provider.tag}}</span>
+  </div>
+  <div class="btm">
+    <p class="des" [title]="provider.des">{{provider.des}}</p>
+    <a [href]="provider.seller" class="btn">进入店铺</a>
+  </div>
+</div>

@@ -15,6 +15,8 @@ import {RouterModule} from '@angular/router';
 import { BoxhdComponent } from './components/boxhd/boxhd.component';
 import { CardComponent } from './components/card/card.component';
 import { StripComponent } from './components/strip/strip.component';
+import { ProviderComponent } from './components/provider/provider.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 registerLocaleData(zh);
 
@@ -26,7 +28,9 @@ registerLocaleData(zh);
     IndexComponent,
     BoxhdComponent,
     CardComponent,
-    StripComponent
+    StripComponent,
+    ProviderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

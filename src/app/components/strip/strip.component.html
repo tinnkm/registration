@@ -1,3 +1,25 @@
-<p>
-  strip works!
-</p>
+<div class="strip">
+  <div class="strip-cover" [ngStyle]="{'background-image':'url('+strip.coverBackGroud+')'}" >
+    <h4 class="title">{{strip.coverTitle}}</h4>
+    <p class="intro">{{strip.coverIntro}}</p>
+    <a [href]="strip.coverMore" class="more">更多服务</a>
+  </div>
+  <div class="strip-feature">
+    <div class="strip-item" *ngFor="let item of strip.items;let i = index" (mouseenter)="show = i" (mouseleave)="show = -1">
+      <div class="header">
+        <h5 class="title">
+          <a [href]="item.titleHref" [title]="item.title" >{{item.title}}</a>
+        </h5>
+        <p class="intro" [title]="item.intro">{{item.intro}}</p>
+      </div>
+      <div class="sum">
+        <p class="price">{{item.price | currency}}</p>
+        <p class="record">
+          <span>销量&nbsp;{{item.sell}}</span>
+          <span>咨询&nbsp;{{item.consult}}</span>
+        </p>
+        <a [href]="item.buy" [hidden]="!(show === i)" class="buy">立即购买</a>
+      </div>
+    </div>
+  </div>
+</div>

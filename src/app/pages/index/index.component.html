@@ -25,7 +25,17 @@
   <div class="content-service">
     <div class="container">
       <app-boxhd title="内容创业服务"></app-boxhd>
-
+      <app-strip *ngFor="let strip of stripList" [strip]="strip"></app-strip>
+    </div>
+  </div>
+  <!-- 热门服务商 -->
+  <div class="hot-provider">
+    <div class="container">
+      <app-boxhd title="热门服务商"></app-boxhd>
+      <div class="clearfix">
+        <app-provider [rowFirst]="i % 4 ==0" *ngFor="let provider of providerList;let i = index"
+                      [provider]="provider"></app-provider>
+      </div>
     </div>
   </div>
 </div>

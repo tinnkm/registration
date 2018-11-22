@@ -43,3 +43,10 @@ body {
 *, ::after, ::before {
   box-sizing: unset;
 }
+img {
+  border: none;
+  outline: none;
+}
+em {
+  font-style: normal;
+}
